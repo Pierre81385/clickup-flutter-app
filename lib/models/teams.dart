@@ -13,7 +13,8 @@ class Teams {
   List<Team> teams;
 
   factory Teams.fromJson(Map<String, dynamic> json) => Teams(
-        teams: List<Team>.from(json["teams"].map((x) => Team.fromJson(x))),
+        teams: List<Team>.from(
+            json['teams'].map((x) => Team.fromJson(json['teams'][x]))),
       );
 
   Map<String, dynamic> toJson() => {

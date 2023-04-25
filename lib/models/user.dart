@@ -49,17 +49,17 @@ class UserClass {
   String dateInvited;
 
   factory UserClass.fromJson(Map<String, dynamic> json) => UserClass(
-        id: json["id"],
-        username: json["username"],
-        email: json["email"],
-        color: json["color"],
-        profilePicture: json["profilePicture"],
-        initials: json["initials"],
-        role: json["role"],
+        id: json["id"] ?? '',
+        username: json["username"] ?? '',
+        email: json["email"] ?? '',
+        color: json["color"] ?? '',
+        profilePicture: json["profilePicture"] ?? '',
+        initials: json["initials"] ?? '',
+        role: json["role"] ?? '',
         customRole: CustomRole.fromJson(json["custom_role"]),
-        lastActive: json["last_active"],
-        dateJoined: json["date_joined"],
-        dateInvited: json["date_invited"],
+        lastActive: json["last_active"] ?? '',
+        dateJoined: json["date_joined"] ?? '',
+        dateInvited: json["date_invited"] ?? '',
       );
 
   Map<String, dynamic> toJson() => {

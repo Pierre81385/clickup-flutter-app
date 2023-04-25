@@ -1,3 +1,4 @@
+import 'package:clickupflutterapp/views/workspace.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: TeamPage(apiKey: "pk_48299566_Y9IE4A1N5SEEFXTO5VRSUJ3SOEZVOXXQ"),
     );
   }
 }
